@@ -1,6 +1,6 @@
 import { fetcher } from '../methods';
 import {  sort } from '../methods'
-const server = "http://localhost:3000";
+const server = "http://localhost:5000";
 
 export const DEVICES = (dispatch) => ({
   getDevices: async () => {

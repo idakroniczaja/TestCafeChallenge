@@ -1,6 +1,6 @@
 import express from 'express'
 import consign from 'consign'
-cdconst cors = require('cors');
+const cors = require('cors');
 
 const app = express()
 
@@ -17,6 +17,7 @@ consign()
   );
 
 
+  app.use('/', require('./routes/index'));
   app.use('/', require('./routes/devices'));
 
   module.exports = app;
